@@ -1,15 +1,15 @@
-
 import React from 'react';
 import { View } from 'react-native';
-import LoadingScreen from './Components/LoadingScreen';
-import SignUp from './Components/Signup/SignUp';
+import AgeScreen from './Components/AgeScreen';
 
 
 const App = () => {
   return (
-      <View>
-        <SignUp />
-      </View>   
+      
+    
+        <AgeScreen />
+        
+      
   );
 };
 

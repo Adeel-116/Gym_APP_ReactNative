@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, ImageBackground, StatusBar, TextInput, TouchableOpacity} from 'react-native';
+import { Text, StyleSheet, View, ImageBackground, StatusBar, TextInput, TouchableOpacity, Image} from 'react-native';
 
 export default function SignUp() {
   function alert(arg0: string): void {
@@ -61,10 +61,38 @@ export default function SignUp() {
             </View>
 
 
+            <View style={styles.footerContainer}>
+              <View style={ styles.line}></View>
+              <Text style={{paddingHorizontal: 10, color: '#727272'}}>Or Sign In With</Text>
+              <View style={ styles.line}></View>
+            </View>
 
-            
+            <View style={styles.linkButtonContainer}>
+                <View style={styles.linkButton}>
+                <Image
+                  source={require('../../assets/Images/iphone.png')}
+                  style={{ }}
+                 />
+                </View>
+                <View style={styles.linkButton}>
+                <Image
+                  source={require('../../assets/Images/Google.png')}
+                  style={{ }}
+                 />
+                </View>
+                <View style={styles.linkButton}>
+                <Image
+                  source={require('../../assets/Images/facebookIcon.png')}
+                  style={{ }}
+                 />
+                </View>
+            </View>
 
 
+
+            <View style={""}>
+              <Text style={{color: '#fafafa', paddingVertical: 20, textAlign: 'center'}}>Don't have an account? <Text style={{textDecorationLine: 'underline'}}>Sign Up</Text></Text>
+            </View>
 
           </View>
 
@@ -81,6 +109,37 @@ export default function SignUp() {
 }
 
 const styles = StyleSheet.create({
+  linkButton:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 30,
+    paddingVertical: 12,
+    paddingHorizontal: 26,
+    borderWidth: 2,
+    borderRadius: 50,
+    borderColor: '#b2b2b2',
+  },
+  linkButtonContainer:{
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    gap: 15,
+    width: '100%',
+  },
+  line:{
+    width: '30%',
+    height: 2,
+    backgroundColor: '#fafafa'
+  },
+
+  footerContainer:{
+    margin: 10,
+    padding: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+    width: '100%',
+  },
   container: {
     width: '100%',
     height: '100%',
