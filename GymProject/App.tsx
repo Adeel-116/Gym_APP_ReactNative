@@ -1,18 +1,14 @@
-import React from 'react';
-import { View } from 'react-native';
-import AgeScreen from './Components/AgeScreen';
+import React from "react";
+import SignIn from "./Components/Pages/SignIn/SignIn";
+import SignUp from "./Components/Pages/SignUp/SignUp";
+import { CameraAccess } from "./Components/CameraAccess";
 
 
-const App = () => {
-  return (
-      
-    
-        <AgeScreen />
-        
-      
-  );
-};
 
-
+function App(){
+  return(
+    <SignUp />
+  )
+}
 
 export default App;
